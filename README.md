@@ -1,11 +1,14 @@
-It is a react project which has a form with validations applied on it.
+This is a signup form written in react.js.
 
-The form has following fields:
-FirstName, LastName, Email, Password
+The form has following fields: FirstName, LastName, Email, Password
 
 Validations:
+
 firstName and lastName should be atleast 4 characters.
+
 Email and password are validated using regex.
+
+The errors in validations are displayed just below the corresponding input fields.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
