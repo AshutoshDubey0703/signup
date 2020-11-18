@@ -55,65 +55,65 @@ class Form extends Component {
     const { formErrors } = this.state;
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="firstName">First Name: </label>
+        <form onSubmit={this.handleSubmit} className="m-5">
+          <div className="form-group row">
+            <label htmlFor="firstName" className="col-2 form-label">First Name: </label>
             <input
               type="text"
               name="firstName"
               id="firstName"
-              className="form-control"
+              className="form-control col-6"
               placeholder="First Name"
               onChange={this.handleChange}
               required
             />
             {formErrors.firstName.length > 0 && (
-              <span className="alert-danger">{formErrors.firstName}</span>
+              <span className="alert-danger m-2">{formErrors.firstName}</span>
             )}
           </div>
-          <div className="form-group">
-            <label htmlFor="lastName">Last Name: </label>
+          <div className="form-group row">
+            <label htmlFor="lastName" className="col-2">Last Name: </label>
             <input
               type="text"
               name="lastName"
               id="lastName"
-              className="form-control"
+              className="form-control col-6"
               placeholder="Last Name"
               onChange={this.handleChange}
               required
             />
             {formErrors.lastName.length > 0 && (
-              <span className="alert-danger">{formErrors.lastName}</span>
+              <span className="alert-danger m-2">{formErrors.lastName}</span>
             )}
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Email: </label>
+          <div className="form-group row">
+            <label htmlFor="email" className="col-2">Email: </label>
             <input
               type="text"
               name="email"
               id="email"
-              className="form-control"
+              className="form-control col-6"
               placeholder="Email"
               onChange={this.handleChange}
               required
             />
             {formErrors.email.length > 0 && (
-              <span className="alert-danger">{formErrors.email}</span>
+              <span className="alert-danger m-2">{formErrors.email}</span>
             )}
           </div>
-          <div className="form-group">
-            <label htmlFor="password">Password: </label>
+          <div className="form-group row">
+            <label htmlFor="password" className="col-2">Password: </label>
             <input
               type="password"
               name="password"
               id="password"
-              className="form-control"
+              className="form-control col-6"
               placeholder="Password"
               onChange={this.handleChange}
               required
             />
             {formErrors.password.length > 0 && (
-              <span className="alert-danger">{formErrors.password}</span>
+              <span className="alert-danger m-2">{formErrors.password}</span>
             )}
           </div>
           <div className="form-group">
